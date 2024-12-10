@@ -14,16 +14,23 @@ const Home = () => {
  // Define scenes and their hotspots
  const scenes = {
   scene1: {
-   image: "/anh360/anh1.jpg",
+   image: "/haiphong/hp1.jpg",
    hotspots: [
-    {id: "hotspot1", pitch: 50, yaw: 20, text: "Đèo Khau Cọ", nextScene: "scene2", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
-    {id: "hotspot2", pitch: -50, yaw: 50, text: "Cánh đồng Mường Than", nextScene: "scene3", video: "https://samplelib.com/lib/preview/mp4/sample-10s.mp4"},
-    {id: "hotspot3", pitch: 15, yaw: -30, text: "Làng cá Thẩm Phé", nextScene: "scene4", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
+    {id: "hotspot1", pitch: 10, yaw: 20, text: "Vườn hoa Tam Kỳ", nextScene: "scene2", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
+    {id: "hotspot2", pitch: 30, yaw: 50, text: "Ngân hàng nhà nước", nextScene: "scene3", video: "https://samplelib.com/lib/preview/mp4/sample-10s.mp4"},
+    {id: "hotspot3", pitch: 50, yaw: -50, text: "Cung văn hóa lao động hữu nghị Việt Tiệp", nextScene: "scene4", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
+    {id: "hotspot3", pitch: -50, yaw: 70, text: "Cầu vượt Lạch Tray", nextScene: "scene4", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
+    {id: "hotspot3", pitch: -50, yaw: -35, text: "Cung thiếu nhi Hải Phòng", nextScene: "scene5", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
+    {id: "hotspot3", pitch: -10, yaw: 80, text: "Sân vận động Lạch Tray", nextScene: "scene6", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
+    {id: "hotspot3", pitch: 30, yaw: -190, text: "Tượng đài Nữ tướng Lê Chân", nextScene: "scene7", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
    ],
   },
-  scene2: {image: "/anh360/anh2.jpg", hotspots: []},
-  scene3: {image: "/anh360/anh3.jpg", hotspots: []},
-  scene4: {image: "/anh360/anh4.jpg", hotspots: []},
+  scene2: {image: "/haiphong/hp2.jpg", hotspots: []},
+  scene3: {image: "/haiphong/hp3.jpg", hotspots: []},
+  scene4: {image: "/haiphong/hp4.jpg", hotspots: []},
+  scene5: {image: "/haiphong/hp5.jpg", hotspots: []},
+  scene6: {image: "/haiphong/hp6.jpg", hotspots: []},
+  scene7: {image: "/haiphong/hp2.jpg", hotspots: []},
  }
 
  const handleStartVisit = () => setIsOverlayOpen(false)
@@ -78,7 +85,7 @@ const Home = () => {
      <div id='welcome_container' className='welcome_container show-info'>
       <div className='text-main'>
        <span id='text-field'>Du lịch</span>
-       <p id='text-name-project'>Than Uyên</p>
+       <p id='text-name-project'>Hải Phòng</p>
        <div onClick={handleStartVisit} style={{cursor: "pointer"}}>
         <span id='text-start-visit'>Bắt đầu tham quan</span>
        </div>

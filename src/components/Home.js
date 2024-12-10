@@ -134,7 +134,7 @@ const Home = () => {
    )}
 
    {/* Pannellum Panorama Viewer */}
-   <Pannellum ref={panoramaRef} width='100%' height='100vh' image={scenes[currentScene]?.image} pitch={0} yaw={0} hfov={110} autoLoad type='equirectangular' autoRotate={-3} />
+   <Pannellum ref={panoramaRef} width='100%' height='100vh' image={scenes[currentScene]?.image} pitch={0} yaw={0} hfov={110} autoLoad type='equirectangular' autoRotate={-1} />
   </div>
  )
 }

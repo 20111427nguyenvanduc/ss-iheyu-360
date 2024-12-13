@@ -14,23 +14,24 @@ const Home = () => {
  // Define scenes and their hotspots
  const scenes = {
   scene1: {
-   image: "/haiphong/hp1.jpg",
+   image: "/haiphong/converted_360/toan-canh-thanh-pho-tren-cao/equirect_level_3.jpg",
    hotspots: [
     {id: "hotspot1", pitch: 10, yaw: 20, text: "Vườn hoa Tam Kỳ", nextScene: "scene2", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
-    {id: "hotspot2", pitch: 30, yaw: 50, text: "Ngân hàng nhà nước", nextScene: "scene3", video: "https://samplelib.com/lib/preview/mp4/sample-10s.mp4"},
-    {id: "hotspot3", pitch: 50, yaw: -50, text: "Cung văn hóa lao động hữu nghị Việt Tiệp", nextScene: "scene4", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
-    {id: "hotspot3", pitch: -50, yaw: 70, text: "Cầu vượt Lạch Tray", nextScene: "scene4", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
-    {id: "hotspot3", pitch: -50, yaw: -35, text: "Cung thiếu nhi Hải Phòng", nextScene: "scene5", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
-    {id: "hotspot3", pitch: -10, yaw: 80, text: "Sân vận động Lạch Tray", nextScene: "scene6", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
-    {id: "hotspot3", pitch: 30, yaw: -190, text: "Tượng đài Nữ tướng Lê Chân", nextScene: "scene7", video: "https://samplelib.com/lib/preview/mp4/sample-15s.mp4"},
+    {id: "hotspot2", pitch: 30, yaw: 50, text: "Ngân hàng nhà nước", nextScene: "scene3", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
+    {id: "hotspot3", pitch: 50, yaw: -50, text: "Cung văn hóa lao động hữu nghị Việt Tiệp", nextScene: "scene4", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
+    {id: "hotspot3", pitch: -50, yaw: 70, text: "Cầu vượt Lạch Tray", nextScene: "scene5", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
+    {id: "hotspot3", pitch: -50, yaw: -35, text: "Cung thiếu nhi Hải Phòng", nextScene: "scene6", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
+    {id: "hotspot3", pitch: -10, yaw: 80, text: "Sân vận động Lạch Tray", nextScene: "scene7", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
+    {id: "hotspot3", pitch: 30, yaw: -190, text: "Hồ Tam Bạc", nextScene: "scene8", video: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"},
    ],
   },
-  scene2: {image: "/haiphong/hp2.jpg", hotspots: []},
-  scene3: {image: "/haiphong/hp3.jpg", hotspots: []},
-  scene4: {image: "/haiphong/hp4.jpg", hotspots: []},
-  scene5: {image: "/haiphong/hp5.jpg", hotspots: []},
-  scene6: {image: "/haiphong/hp6.jpg", hotspots: []},
-  scene7: {image: "/haiphong/hp2.jpg", hotspots: []},
+  scene2: {image: "/haiphong/converted_360/vuon-hoa-tam-ky/equirect_level_2.jpg", hotspots: []},
+  scene3: {image: "/haiphong/converted_360/ngan-hang-nha-nuoc/equirect_level_2.jpg", hotspots: []},
+  scene4: {image: "/haiphong/converted_360/cung-van-hoa-viet-tiep/equirect_level_2.jpg", hotspots: []},
+  scene5: {image: "/haiphong/converted_360/cau-vuot-lach-tray/equirect_level_2.jpg", hotspots: []},
+  scene6: {image: "/haiphong/converted_360/cung-thieu-nhi/equirect_level_2.jpg", hotspots: []},
+  scene7: {image: "/haiphong/converted_360/san-van-dong-lach-tray/equirect_level_2.jpg", hotspots: []},
+  scene8: {image: "/haiphong/converted_360/ho-tam-bac/equirect_level_2.jpg", hotspots: []},
  }
 
  const handleStartVisit = () => setIsOverlayOpen(false)

@@ -102,7 +102,7 @@ const Home = () => {
      aria-label='Quay lại'
      sx={{
       position: "absolute",
-      top: "20px",
+      top: "40px",
       left: "20px",
       zIndex: 1000,
       height: "46px",
@@ -127,7 +127,7 @@ const Home = () => {
       overflow: "hidden",
      }}
     >
-     <video controls autoPlay style={{width: "100%"}}>
+     <video controls style={{width: "100%"}}>
       <source src={currentVideo} type='video/mp4' />
       Your browser does not support the video tag.
      </video>

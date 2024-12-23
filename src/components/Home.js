@@ -65,7 +65,7 @@ const Home = () => {
      yaw: hotspot.yaw,
      cssClass: "custom-marker",
      createTooltipFunc: (hotSpotDiv) => {
-      hotSpotDiv.innerHTML = `<p class="marker-address">${hotspot.text}</p>`
+      hotSpotDiv.innerHTML = `<div class="marker-img-location"><img src="/icon-view-map.png" alt="Icon marker" width="70px" height="auto"><p class="marker-address">${hotspot.text}</p></div>`
      },
      clickHandlerFunc: () => {
       setPreviousScene(currentScene)
@@ -121,7 +121,7 @@ const Home = () => {
       bottom: "20px",
       left: "20px",
       zIndex: 1000,
-      width: "300px",
+      width: "200px",
       background: "#000",
       borderRadius: "10px",
       overflow: "hidden",

@@ -520,4 +520,40 @@ code {
   .pnlm-loading-box::after {
     content: "Đang tải hình ảnh...";
   }
+  .marker-img-location {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    flex-direction: column; /* Sắp xếp theo cột */
+    text-align: center; /* Căn giữa nội dung văn bản */
+  }
+  
+  .marker-img-location img {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: auto;
+    animation: spinY 3s linear infinite; /* Gọi animation xoay quanh trục Y */
+  }
+  
+  @keyframes spinY {
+    0% {
+      transform: rotateY(0deg); /* Bắt đầu không xoay */
+    }
+    50% {
+      transform: rotateY(180deg); /* Lật nửa vòng */
+    }
+    100% {
+      transform: rotateY(360deg); /* Hoàn thành một vòng */
+    }
+  }
+  
+  
+  
+  .marker-img-location p {
+    margin: 8px 0 0; /* Thêm khoảng cách giữa ảnh và văn bản */
+    font-size: 14px; /* Tùy chỉnh kích thước chữ */
+    color: #333; /* Màu chữ */
+  }
+  
   

@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from "react"
 import {Pannellum} from "pannellum-react"
 import ArrowBackIcon from "@mui/icons-material/ArrowBack"
 import Fab from "@mui/material/Fab"
+import PannellumWithLoader from "./PannellumWithLoader"
 
 const Home = () => {
  const [isOverlayOpen, setIsOverlayOpen] = useState(true)
@@ -137,7 +138,20 @@ const Home = () => {
    )}
 
    {/* Pannellum Panorama Viewer */}
-   <Pannellum ref={panoramaRef} width='100%' height='100vh' image={scenes[currentScene]?.image} pitch={0} yaw={0} hfov={110} autoLoad type='equirectangular' autoRotate={-1} />
+   <PannellumWithLoader
+    loadingImage={"/images/iconapp.png"}
+    ref={panoramaRef}
+    width='100%'
+    height='100vh'
+    image={scenes[currentScene]?.image}
+    pitch={0}
+    yaw={0}
+    hfov={110}
+    autoLoad
+    type='equirectangular'
+    autoRotate={-2}
+   />
+   {/* <Pannellum ref={panoramaRef}  width='100%' height='100vh' image={scenes[currentScene]?.image} pitch={0} yaw={0} hfov={110} autoLoad type='equirectangular' autoRotate={-1} /> */}
   </div>
  )
 }

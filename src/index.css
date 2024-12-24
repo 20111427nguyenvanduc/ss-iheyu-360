@@ -61,7 +61,7 @@ code {
  width: 350px;
  height: 50px;
  background-color: #fff;
- color: #007CFE;
+ color: #007cfe;
  font-size: 18px;
  text-transform: capitalize;
  display: flex;
@@ -509,52 +509,58 @@ code {
  border-radius: 16px;
 }
 .pnlm-loading-box {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    text-align: center;
+ background: rgba(0, 0, 0, 0.7);
+ color: #fff;
+ padding: 20px;
+ border-radius: 10px;
+ font-size: 16px;
+ text-align: center;
+}
+
+.pnlm-loading-box::after {
+ content: "Đang tải hình ảnh...";
+}
+.marker-img-location {
+ display: flex;
+ align-items: center; /* Căn giữa theo chiều dọc */
+ justify-content: center; /* Căn giữa theo chiều ngang */
+ flex-direction: column; /* Sắp xếp theo cột */
+ text-align: center; /* Căn giữa nội dung văn bản */
+}
+
+.marker-img-location .img-marker {
+ display: block;
+ margin: 0 auto;
+ width: 50px;
+ height: auto;
+ animation: spinY 5s linear infinite; /* Gọi animation xoay quanh trục Y */
+}
+
+@keyframes spinY {
+ 0% {
+  transform: rotateY(0deg); /* Bắt đầu không xoay */
+ }
+ 50% {
+  transform: rotateY(180deg); /* Lật nửa vòng */
+ }
+ 100% {
+  transform: rotateY(360deg); /* Hoàn thành một vòng */
+ }
+}
+
+.marker-img-location p {
+ margin: 8px 0 0; /* Thêm khoảng cách giữa ảnh và văn bản */
+ font-size: 14px; /* Tùy chỉnh kích thước chữ */
+ color: #007cfe; /* Màu chữ */
+ font-weight: 600;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-  
-  .pnlm-loading-box::after {
-    content: "Đang tải hình ảnh...";
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
-  .marker-img-location {
-    display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    flex-direction: column; /* Sắp xếp theo cột */
-    text-align: center; /* Căn giữa nội dung văn bản */
-  }
-  
-  .marker-img-location .img-marker {
-    display: block;
-    margin: 0 auto;
-    width: 50px;
-    height: auto;
-    animation: spinY 5s linear infinite; /* Gọi animation xoay quanh trục Y */
-  }
-  
-  @keyframes spinY {
-    0% {
-      transform: rotateY(0deg); /* Bắt đầu không xoay */
-    }
-    50% {
-      transform: rotateY(180deg); /* Lật nửa vòng */
-    }
-    100% {
-      transform: rotateY(360deg); /* Hoàn thành một vòng */
-    }
-  }
-  
-  
-  
-  .marker-img-location p {
-    margin: 8px 0 0; /* Thêm khoảng cách giữa ảnh và văn bản */
-    font-size: 14px; /* Tùy chỉnh kích thước chữ */
-    color: #007CFE; /* Màu chữ */
-    font-weight: 600;
-  }
-  
-  
+}
+

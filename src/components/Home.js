@@ -65,7 +65,7 @@ const Home = () => {
      yaw: hotspot.yaw,
      cssClass: "custom-marker",
      createTooltipFunc: (hotSpotDiv) => {
-      hotSpotDiv.innerHTML = `<div class="marker-img-location"><img src="/icon-view-map.png" alt="Icon marker" width="70px" height="auto"><p class="marker-address">${hotspot.text}</p></div>`
+      hotSpotDiv.innerHTML = `<div class="marker-img-location"><img class="img-marker" src="/images/icon-marker.png" alt="Icon marker" width="49px" height="auto"><img src="/images/icon-bottom-marker.png" alt="Icon marker" width="49px" height="auto"><p class="marker-address">${hotspot.text}</p></div>`
      },
      clickHandlerFunc: () => {
       setPreviousScene(currentScene)
@@ -85,10 +85,11 @@ const Home = () => {
     <div id='welcome_slide'>
      <div id='welcome_container' className='welcome_container show-info'>
       <div className='text-main'>
-       <span id='text-field'>Du lịch</span>
-       <p id='text-name-project'>Hải Phòng</p>
-       <div onClick={handleStartVisit} style={{cursor: "pointer"}}>
-        <span id='text-start-visit'>Bắt đầu tham quan</span>
+       <img src='/images/icon-home.png' alt='Icon marker' width='76px' height='auto' />
+       <p style={{fontSize: "24px", fontWeight: 700, margin: 0, marginTop: "32px"}}>BẢN ĐỒ 360</p>
+       <p style={{fontSize: "24px", fontWeight: 700, margin: 0, marginBottom: "28px", marginTop: "16px"}}>THÀNH PHỐ HẢI PHÒNG</p>
+       <div className='btn-discovery' onClick={handleStartVisit} style={{cursor: "pointer"}}>
+        <span>Bắt đầu khám phá</span>
        </div>
       </div>
      </div>
@@ -102,14 +103,15 @@ const Home = () => {
      aria-label='Quay lại'
      sx={{
       position: "absolute",
-      top: "40px",
+      top: "30px",
       left: "20px",
       zIndex: 1000,
-      height: "46px",
-      width: "46px",
+      height: "40px",
+      width: "40px",
+      background: "#FFF",
      }}
     >
-     <ArrowBackIcon />
+     <i className='icon-linear-arrow-left-1' style={{color: "#292D32", fontSize: "22px"}} />
     </Fab>
    )}
 

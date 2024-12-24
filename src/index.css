@@ -30,7 +30,7 @@ code {
  align-items: center;
  justify-content: center;
  transition: all 0.4s;
- background-color: #00000040;
+ background-color: rgba(28, 30, 33, 0.6);
 }
 
 .starview {
@@ -61,20 +61,20 @@ code {
  width: 350px;
  height: 50px;
  background-color: #fff;
- color: #014689;
- font-size: 1.6rem;
+ color: #007CFE;
+ font-size: 18px;
  text-transform: capitalize;
  display: flex;
  align-items: center;
  justify-content: center;
- border-radius: 99px;
+ border-radius: 16px;
  gap: 16px;
  transition: all 0.4s;
  user-select: none;
  visibility: hidden;
  text-shadow: none;
  position: relative;
- animation: 0.6s jump ease infinite alternate;
+ font-weight: 600;
 }
 
 .text-main div:hover {
@@ -155,7 +155,7 @@ code {
  /*font-size: 33px;*/
 
  font-size: 130%;
- max-width: 55vw;
+ max-width: 100%;
 }
 
 .tutorial-main {
@@ -366,7 +366,7 @@ code {
   /*font-size: 50px;*/
   /*zoom: 0.5;*/
   font-size: 120%;
-  max-width: 40vw;
+  max-width: 100%;
   text-align: left;
  }
 }
@@ -395,13 +395,13 @@ code {
   /*font-size: 50px;*/
   /*zoom: 0.5;*/
   font-size: 130%;
-  max-width: 70vw;
+  max-width: 100%;
   text-align: center;
  }
 
  .welcome_container.show-info .text-main div {
-  width: 250px;
-  height: 40px;
+  width: 90%;
+  height: 50px;
   font-size: 16px;
  }
 
@@ -447,12 +447,13 @@ code {
  .welcome_container.show-info .text-main {
   font-size: 20px;
   align-items: center;
+  width: 100%;
  }
 
  .welcome_container.show-info .text-main p {
   font-size: 35px;
   /*zoom: 0.35;*/
-  max-width: 90vw;
+  max-width: 100%;
  }
 
  .tutorial-main {
@@ -504,9 +505,8 @@ code {
 
 .marker-address {
  background: #fff;
- padding: 6px 16px;
- border-radius: 12px;
- border: 2px solid #007cfe;
+ padding: 8px 6px;
+ border-radius: 16px;
 }
 .pnlm-loading-box {
     background: rgba(0, 0, 0, 0.7);
@@ -528,12 +528,12 @@ code {
     text-align: center; /* Căn giữa nội dung văn bản */
   }
   
-  .marker-img-location img {
+  .marker-img-location .img-marker {
     display: block;
     margin: 0 auto;
     width: 50px;
     height: auto;
-    animation: spinY 3s linear infinite; /* Gọi animation xoay quanh trục Y */
+    animation: spinY 5s linear infinite; /* Gọi animation xoay quanh trục Y */
   }
   
   @keyframes spinY {
@@ -553,7 +553,8 @@ code {
   .marker-img-location p {
     margin: 8px 0 0; /* Thêm khoảng cách giữa ảnh và văn bản */
     font-size: 14px; /* Tùy chỉnh kích thước chữ */
-    color: #333; /* Màu chữ */
+    color: #007CFE; /* Màu chữ */
+    font-weight: 600;
   }
   
   
